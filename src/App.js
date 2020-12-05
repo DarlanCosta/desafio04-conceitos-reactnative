@@ -18,7 +18,6 @@ export default function App() {
   useEffect(() => {
     api.get('repositories').then(reposity => {
       setRepositories(reposity.data);
-      console.log(reposity.data)
     })
   },[])
 
